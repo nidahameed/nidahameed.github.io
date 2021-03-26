@@ -12,7 +12,9 @@ body {
         text-align: left;
         font-weight: 500;
   }
-  
+  #hello {
+    font-size: 120px;
+  }
   h2 {
       color: #ffffff;
       margin-top: 30px;
