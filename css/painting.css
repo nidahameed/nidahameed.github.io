@@ -54,7 +54,7 @@ img:hover {
 .main {
     padding: 5em 0;
     margin: 20px 20px 20px 20px;
-    width: 100%;
+    width: 90%;
     grid-area: m;
 }
 
