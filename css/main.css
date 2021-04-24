@@ -1,0 +1,501 @@
+body, html, main{
+    height:100%;
+    overflow: visible;
+}
+
+.skip a{
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.skip a:focus{
+    top: 10px;
+}
+
+header {
+    text-transform: uppercase;
+    padding: 15px 0px 15px 0px;
+    margin: 0px 0px 30px 0px;
+    background: linear-gradient(90deg, #b9deed, #efefef);
+}
+
+a {
+    text-decoration: none;
+    color: #0f2341;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px 15px 15px;
+    gap: 15px;
+}
+
+.nav_links a {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+}
+
+.link:hover, #current {
+    border: 2px solid #0f2341;
+    border-spacing: 20px;
+    padding: 0px 10px 0px 10px;
+}
+
+footer {
+    background: linear-gradient(90deg, #b9deed, #efefef);
+    padding: 30px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+
+#parallax-sections h2 {
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    box-shadow: inset 0 0 3000px rgba(255,255,255,.5);
+    font-family: 'Oswald', sans-serif;
+    font-size:50px; 
+    letter-spacing:10px; 
+    text-align:center; 
+    color: #1e3343;; 
+    font-weight:900; 
+    text-transform:uppercase; 
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.main, #parallax-sections {
+    width: 90%;
+    margin: auto;
+}
+
+#parallax-sections .parallax-one {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;    
+    background-image: url(../img/nyskyline.jpg); 
+
+}
+
+#parallax-sections .parallax-two {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(../img/dccherryblossoms.jpg); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#parallax-sections .parallax-three {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(../img/sandiegobeach.jpg); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#parallax-sections .parallax-four {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(../img/stl.jpg); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.ny-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px 300px 300px 300px;
+    margin: 40px 0px 40px 0px;
+    row-gap: 30px;
+    column-gap: 15px;
+
+}
+
+.ny-images img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter:sepia(85%);
+}
+
+.ny-images img:hover {
+    filter: sepia(0%) saturate(110%);
+}
+
+.dc-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px 250px;
+    margin: 40px 0px 40px 0px;
+    row-gap: 30px;
+    column-gap: 15px;
+}
+
+.dc-images img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter:sepia(85%);
+}
+
+.dc-images img:hover {
+    filter: sepia(0%) saturate(110%);
+}
+
+.sd-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px 250px;
+    margin: 40px 0px 40px 0px;
+    row-gap: 30px;
+    column-gap: 15px;
+}
+
+.sd-images img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter:sepia(85%);
+}
+
+.sd-images img:hover {
+    filter: sepia(0%) saturate(110%);
+}
+
+.stl-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px 300px 300px 300px;
+    margin: 40px 0px 40px 0px;
+    row-gap: 30px;
+    column-gap: 15px;
+}
+
+.stl-images img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter:sepia(85%);
+}
+
+.stl-images img:hover {
+    filter: sepia(0%) saturate(110%);
+}
+
+#parallax-sections, caption {
+    font-family: 'Oswald', sans-serif;
+    font-family: 200px;
+    letter-spacing: 3px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 30px 0px 20px 0px;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #375f7b;
+    font-size: 65px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    margin: 100px 0px 70px 0px;
+}
+
+.intro-tagline {
+    font-family: 'Oswald', sans-serif;
+    color: #46799d;
+    font-size: 24px;
+    font-weight: 200px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 100px 0px 70px 0px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #345a75;
+    font-size: 20px;
+    font-weight: 100px;
+    letter-spacing: 1px;
+    margin: 100px 0px 70px 0px;
+    line-height: 30px;
+}
+
+.contact-form {
+    width: 90%;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+.send-button {
+    background: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: 3px solid black;
+}
+
+form {    
+    background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+    font-size: 125%;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+
+
+label{
+    display: inline-block;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid #1a1424;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid #1a1424;
+    box-sizing: border-box;  
+}
+
+#parallax-sections .parallax-contact {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(../img/contactparallax.jpg); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.nida-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nida-photos img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.nida-photos img:hover {
+    filter: grayscale(0%) saturate(110%);
+}
+
+
+.photo-gallery {
+    width: 90%;
+    margin: auto;
+}
+
+.information {
+    width: 90%;
+    margin: auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+@media all and (min-width: 750px) {
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 15px 15px 15px;
+        gap: 20px;
+    }
+
+    .ny-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px 400px;
+        margin: 50px 0px 50px 0px;
+        column-gap: 15px;
+    }
+
+    .dc-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 40px 0px 40px 0px;
+        row-gap: 30px;
+        column-gap: 15px;
+    }
+
+    .sd-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 40px 0px 40px 0px;
+        row-gap: 30px;
+        column-gap: 15px;
+    }
+
+    .stl-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px;
+        margin: 50px 0px 50px 0px;
+        column-gap: 15px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 15px 15px 15px;
+        gap: 50px;
+    }
+
+    .ny-images {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 350px;
+        margin: 40px 0px 50px 0px;
+        row-gap: 50px;
+    }
+
+    .dc-images {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 350px 350px;
+        margin: 40px 0px 50px 0px;
+        row-gap: 50px;
+    }
+
+    .sd-images {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 350px 350px;
+        margin: 40px 0px 50px 0px;
+        row-gap: 50px;
+    }
+
+    .stl-images {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 350px;
+        margin: 40px 0px 50px 0px;
+        row-gap: 50px;
+    }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none;
+    transition: none;
+   }
+
+  /*Turn off parallax*/
+  #parallax-sections .parallax-one {
+    background-attachment: initial;
+  }
+
+  #parallax-section .parallax-two  {
+    background-attachment: initial;
+  }
+
+  #parallax-sections .parallax-three {
+    background-attachment: initial;
+  }
+
+  #parallax-sections .parallax-four {
+    background-attachment: initial;
+  }
+
+  #parallax-sections .parallax-contact {
+    background-attachment: initial;
+  }
+
+  
+}

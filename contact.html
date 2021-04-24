@@ -5,46 +5,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/favorites.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>Contact Me</title>
 </head>
 
 <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
 
-    <main class="container">
-
-        <header id="main">
-
-            <nav>
-                <ul class="nav_list">
-                    <li class="tab"><a href="index.html">Home</a></li>
-                    <li class="tab"><a href="painting.html">Paintings</a></li>
-                    <li class="tab"><a href="favorites.html">Favorites</a></li>
-                    <li class="tab" id="current"><a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="main_area">
-            <h1>Looking for a way to reach me? Contact form coming soon!</h1>
-            <img src="images/line_drawing.png" alt="white lines curved" class="contact_img">
-            <h2>In the meanwhile, please feel free to reach me at nhameed@umich.edu</h1>
+    <header id="navigation">
+        <div class="skip"><a href="#parallax-sections">Skip to Main Content</a>
         </div>
-    
-        <footer class=footer>
-            <h3>Thanks for learning more about me!</h3>
-            <br>
-            <h4>Nida Hameed</h4>
-            <h4>University of Michigan 2021</h4>
-        </footer>
+
+        <nav>
+            <ul class="nav_links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="travels.html">Travels</a></li>
+                <li class="link"><a href="photography.html">Photography</a></li>
+                <li class="link" id="current"><a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div id="parallax-sections">
+            <section>
+                <div class="parallax-contact">
+                </div>
+            </section>
+        </div>
+
+        <div class="main">
+            <h1>Contact</h1>
+            <p>Thanks for taking the time to learn a bit more about me! I'm always happy to connect and I look forward
+                to hearing from you. To reach me, please simply fill out the form below and I'll get back to you as soon
+                as possible!</p>
+        </div>
+
+        <section class="contact-form">
+            <form action="https://formspree.io/f/xyylzajr" method="POST">
+                <label>
+                    Your email address:
+                    <input type="email" name="_replyto">
+                </label>
+                <br>
+                <br>
+                <br>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <br>
+                <br>
+                <button class="send-button" type="submit">Send</button>
+            </form>
+            <p>Thanks for taking the time to fill this form out! Like mentioned, keep an eye out on your inbox for my response soon! In the meanwhile, pleasee feel free to check out more about my travels and other favorites!</p>
+
+        </section>
+
+ 
+        <section class="footer">
+            <footer>
+                <h2>Thank you for learning a bit more about me!</h3>
+                    <h2>Nida Hameed - School of Information</h3>
+            </footer>
+        </section>
     </main>
 
-   
-
-
-
 </body>
+
 </html>
