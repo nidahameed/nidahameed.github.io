@@ -369,6 +369,20 @@ textarea{
 
 }
 
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
 @media all and (min-width: 750px) {
     .nav_links {
@@ -476,6 +490,10 @@ textarea{
     transition: none;
    }
 
+   body {
+       animation: none;
+   }
+
   /*Turn off parallax*/
   #parallax-sections .parallax-one {
     background-attachment: initial;
@@ -496,6 +514,4 @@ textarea{
   #parallax-sections .parallax-contact {
     background-attachment: initial;
   }
-
-  
 }
